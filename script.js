@@ -1,7 +1,4 @@
 function reveal() {
-  alert(
-    "Todos lloraron.\n" +
-    "Algunos demasiado.\n\n" +
-    "Pronto sabrás por qué."
-  );
+  const img = document.getElementById("funeralImage");
+  img.classList.add("show");
 }

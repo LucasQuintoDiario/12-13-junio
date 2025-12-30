@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+/* Fondo oscuro con gradiente tenue */
+body {
+  background: linear-gradient(180deg, #0e0e0e 0%, #1a1a1a 100%);
+  color: #e6e6e6;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px 20px 20px; /* menos padding bottom */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+  color: #ff4444;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-top: 5px; /* menos espacio entre h1 y h2 */
+  text-shadow: 1px 1px 3px #000;
+}
+
+.hero h3 {
+  font-size: 2.8rem;
+  margin-top: 5px; /* menos espacio entre h2 y h3 */
+  color: #fff;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.subtitle {
+  margin-top: 10px; /* reduce espacio */
+  font-style: italic;
+  color: #aaa;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* CTA */
+.cta {
+  padding: 20px 20px; /* menos padding para reducir hueco */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  line-height: 1.5; /* reduce espacio entre líneas */
+  color: #ccc;
+  margin-bottom: 10px; /* espacio controlado entre párrafos */
+}
+
+.cta button {
+  margin-top: 15px; /* menos espacio sobre el párrafo */
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #ff4444;
+  color: #ff4444;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff4444;
+}
+
+.cta button:hover {
+  background: #ff4444;
+  color: #0e0e0e;
+  box-shadow: 0 0 20px #ff2222;
+}
+
+/* STORY */
+.story {
+  max-width: 600px;
+  margin: 30px auto; /* menos margen superior para acercar al CTA */
+  color: #bbb;
+  font-size: 1.1rem;
+  line-height: 1.6; /* más compacto */
+  text-shadow: 1px 1px 4px #000;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.story p {
+  margin-bottom: 10px; /* controla espacio entre párrafos */
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* DETALLES IMAGEN */
+.details-image {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* reduce espacio vertical */
+  filter: grayscale(0%) contrast(1.1);
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto;
+  filter: grayscale(0%) contrast(1.1);
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
